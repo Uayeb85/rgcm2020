@@ -20,6 +20,6 @@ collections:
       - { label: 'Ranking', name: 'ranking', widget: 'string'}
       - { label: 'Tags', name: 'tags', widget: 'list'}
       - { label: 'Imagen', name: 'imagen', widget: 'image'}
-      - { label: 'Galeria', name: 'galeria', widget: 'image', multiple: true}        
+      - { label: 'Galeria', name: 'galeria', widget: 'image', allow_multiple: true}        
         
               
