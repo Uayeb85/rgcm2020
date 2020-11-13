@@ -8,6 +8,7 @@ media_library:
   config:
     cloud_name: uayeb
     api_key: 326796926479962
+    mulltiple: true
 
 collections:
   - name: 'products'
