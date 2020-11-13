@@ -23,9 +23,9 @@ collections:
     widget: 'image', 
     required: 'false'
     media_library:
-    name: cloudinary
-    config:
-      cloud_name: uayeb
-      api_key: 326796926479962
-      multiple: true       
+      name: cloudinary
+      config:
+        cloud_name: uayeb
+        api_key: 326796926479962
+        multiple: true       
               
