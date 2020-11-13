@@ -19,12 +19,13 @@ collections:
       - { label: 'Ranking', name: 'ranking', widget: 'string'}
       - { label: 'Tags', name: 'tags', widget: 'list'}
   - label: 'Galeria', 
-          name: 'galeria', 
-          widget: 'image', 
-          required: 'false'
-          media_library:
-          name: cloudinary
-          config:
-            cloud_name: uayeb
-            api_key: 326796926479962
-            multiple: true      
+    name: 'galeria', 
+    widget: 'image', 
+    required: 'false'
+    media_library:
+    name: cloudinary
+    config:
+      cloud_name: uayeb
+      api_key: 326796926479962
+      multiple: true       
+              
