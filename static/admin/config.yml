@@ -2,13 +2,8 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+public_folder: "static/uploads" 
 public_folder: "/uploads" 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: uayeb
-    api_key: 326796926479962
-    mulltiple: true
 
 collections:
   - name: 'products'
@@ -16,7 +11,7 @@ collections:
     folder: 'products'
     create: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string', required: 'false' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Release', name: 'release', widget: 'string' }
       - { label: 'View', name: 'view', widget: 'string'}
