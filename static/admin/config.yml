@@ -8,7 +8,6 @@ media_library:
     cloud_name: uayeb
     api_key: 326796926479962
     multiple: true
-public_folder: "/uploads" 
 
 collections:
   - name: 'products'
