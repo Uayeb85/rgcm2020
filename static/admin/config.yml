@@ -11,7 +11,7 @@ collections:
     folder: 'products'
     create: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', required: 'false' }
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Release', name: 'release', widget: 'string' }
       - { label: 'View', name: 'view', widget: 'string'}
