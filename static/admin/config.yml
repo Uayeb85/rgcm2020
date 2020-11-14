@@ -7,7 +7,7 @@ media_library:
   config:
     cloud_name: uayeb
     api_key: 326796926479962
-    multiple: true
+    multiple: false
 
 collections:
   - name: 'products'
@@ -24,6 +24,15 @@ collections:
       - { label: 'Ranking', name: 'ranking', widget: 'string'}
       - { label: 'Tags', name: 'tags', widget: 'list'}
       - { label: 'Imagen', name: 'imagen', widget: 'image'}
-      - { label: 'Galeria', name: 'galeria', widget: 'image'}        
+      - { label: 'Galeria', name: 'galeria', widget: 'image'}  
+
+  - name: 'marcas'
+    label: 'Marcas'
+    folder: 'marcas'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'Imagen', name: 'imagen', widget: 'image'}      
         
               
