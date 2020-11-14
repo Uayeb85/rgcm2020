@@ -10,30 +10,17 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Product',
-        path: 'products/**/*.md',
-        refs: {
-          // Create a Tag content type and its nodes automatically.
-          tags: {
-            typeName: 'Tag',
-            create: true
-          }
-        }
+        typeName: 'Categoria',
+        path: 'categorias/**/*.md',
       }
     }
   ],
   templates: {
-    Product:[
+    Categoria:[
       {
-        path:"/products/:title",
-        component:"./src/templates/Product.vue",
+        path:"/categorias/:title",
+        component:"./src/templates/Categoria.vue",
       }
-    ],
-    Tag:[
-      {
-        path:"/tags/:id",
-        component:"./src/templates/Tag.vue",
-      },
-    ],
+    ]
   }
 }

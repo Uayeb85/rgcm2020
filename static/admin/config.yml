@@ -10,21 +10,15 @@ media_library:
     multiple: false
 
 collections:
-  - name: 'products'
-    label: 'Products'
-    folder: 'products'
+  - name: 'categorias'
+    label: 'Categorias'
+    folder: 'categorias'
     create: true
+    slug: '{{slug}}'
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', required: false }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Release', name: 'release', widget: 'string' }
-      - { label: 'View', name: 'view', widget: 'string'}
-      - { label: 'Code', name: 'code', widget: 'string' }
-      - { label: 'Genre', name: 'genre', widget: 'string'}
-      - { label: 'Ranking', name: 'ranking', widget: 'string'}
-      - { label: 'Tags', name: 'tags', widget: 'list'}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'ID', name: 'id', widget: 'id'}
       - { label: 'Imagen', name: 'imagen', widget: 'image'}
-      - { label: 'Galeria', name: 'galeria', widget: 'image'}  
 
   - name: 'marcas'
     label: 'Marcas'
@@ -33,6 +27,50 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string'}
-      - { label: 'Imagen', name: 'imagen', widget: 'image'}      
+      - { label: 'Imagen', name: 'imagen', widget: 'image'}    
+
+  - name: 'servicios'
+    label: 'Servicios'
+    folder: 'servicios'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'Imagen',name: 'imagen', widget: 'image'}
+      - { label: 'Servicio', name: 'servicio', widget: 'list'}  
+
+  - name: 'soluciones'
+    label: 'Soluciones'
+    folder: 'soluciones'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'Nombre', name: 'nombre', widget: 'string'}
+      - { label: 'Descripcion', name: 'descripcion', widget: 'string'}
+      - { label: 'Imagen', name: 'imagen', widget: 'image'}
+
+  - name: 'headend'
+    label: 'Headend'
+    folder: 'headend'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'ID', name: 'id', widget: 'id'}
+      - { label: 'Imange', name: 'imagen', widget: 'image'}
+      - label: 'Ficha'
+        name: 'ficha'
+        widget: 'file'
+        media_folder: "static/uploads"
+        public_folder: "/uploads"
+     -  label: 'Categorias'
+        name: 'categorias'
+        collection: 'categorias'
+        searchFields: ['title']
+        displayFields: ['title']
+        valuedField: 'id'   
+
+
         
               
